@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +8,6 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
-
-
-
-
-
-
 
 body {
     background-color: #0c1022;
@@ -118,7 +107,7 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
-    color: #3cf;
+    color: #0ef;
 
 }
 
@@ -335,11 +324,42 @@ body {
     font-size: 4.5rem;
 }
 
+
+.about-content h3,
+h4,
+p {
+    text-align: center;
+    width: 100%;
+
+}
+
+.about-content {
+    width: 100%;
+    background-image: "images\about.png";
+}
+
+.about-content h4 {
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    object-position: right;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+
+}
+
 .about-content h2 {
     text-align: center;
     line-height: 1.2;
     font-size: 5rem;
     justify-content: right;
+    margin-bottom: 3rem;
 
 }
 
@@ -361,19 +381,12 @@ span {
 
 }
 
-.about-content ul {
-
-    text-align: center;
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-    justify-content: right;
-
-}
 
 .skills {
     text-align: center;
     font-size: 4.5rem;
     color: linear-gradient(#f06, #3cf);
+    margin-top: 7rem;
 }
 
 
@@ -383,7 +396,7 @@ span {
 }
 
 .skills ul {
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 400;
     margin: 20px 0 40px;
     opacity: 0;
@@ -400,6 +413,12 @@ span {
     color: #3cf;
 }
 
+.list-course p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #f06;
+}
+
 .portfolio {
     background: var(--bg--color);
     padding: 5%;
@@ -408,7 +427,7 @@ span {
 }
 
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio-container {
@@ -423,6 +442,7 @@ span {
     box-shadow: 0 0 1rem linear-gradient(#f06);
     overflow: hidden;
     display: flex;
+    margin: 1rem;
 }
 
 .portfolio-box .portfolio-layer {
@@ -485,7 +505,8 @@ span {
 }
 
 .contact form {
-    max-width: 70rem;
+    max-width: 50rem;
+    max-width: 50rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -514,6 +535,7 @@ span {
 
 .contact form textarea {
     resize: none;
+    height: 50%;
 }
 
 .contact form input {
@@ -525,7 +547,7 @@ span {
     height: 48px;
     font-size: 19px;
     color: #fff;
-    background: linear-gradient(#f06, #3cf);
+    background: var(--bg--color);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -585,19 +607,24 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 9%;
+    padding: .3rem 10%;
     flex-wrap: wrap;
     background: var(--bg--color);
 }
 
 .footer-text p {
-    font-size: 1.6rem;
+    font-size: 1.0rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-iconTop a {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 35px;
+    line-height: 35px;
     padding: .8rem;
     background: var(--main--color);
     border-radius: .8rem;
@@ -779,29 +806,67 @@ span {
     }
 
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     .home-content h1 {
         width: 70vw;
+        font-size: 3rem;
     }
 
     .home-img img {
 
-        width: 70vw;
+        width: 73vw;
         margin-top: 4rem;
+    }
+
+
+    .home-img {
+        display: inline-block;
+        margin-top: 6rem;
+    }
+
+    .home-sci {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 3rem;
+    }
+
+    .home-sci a {
+        margin: 10px;
+
     }
 
     .about {
         flex-direction: column-reverse;
     }
 
+    .about h2 {
+        margin-top: 30rem;
+        font-size: 4rem;
+    }
+
+    .about h4 {
+        font-size: 2rem;
+    }
+
+    .about-content img {
+        max-width: 100px;
+    }
+
     .skills ul {
         margin-bottom: 3rem;
+        font-size: 2rem;
+
+    }
+
+    .list-course p {
+        font-size: 2rem;
+        color: #f06;
     }
 
     .portfolio h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .portfolio-container {
@@ -833,6 +898,20 @@ span {
 @media (max-width: 365px) {
     .home-img img {
         width: 90vh;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .footer-sci a {
+        font-size: 35px;
+
     }
 
 }
