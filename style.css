@@ -9,6 +9,8 @@
 
 }
 
+
+
 body {
     background-color: #0c1022;
     color: #fff;
@@ -70,6 +72,7 @@ body {
     display: none;
 }
 
+
 .home {
     width: 100%;
     height: 100vh;
@@ -92,6 +95,7 @@ body {
     animation-delay: .7s;
 }
 
+
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
@@ -111,6 +115,7 @@ body {
 
 }
 
+
 .btn {
     position: relative;
     display: inline-flex;
@@ -129,6 +134,7 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 1.8s;
 }
+
 
 .btn::before {
     content: '';
@@ -204,6 +210,7 @@ body {
     animation-delay: 2.1s;
 }
 
+
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -218,6 +225,7 @@ body {
 .home-sci a:hover::before {
     filter: blur(5px);
 }
+
 
 .home-sci a::after {
     content: '';
@@ -242,6 +250,7 @@ body {
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2.1s, 3.1s;
 }
+
 
 .home-img .glowing-circle {
     position: relative;
@@ -272,6 +281,7 @@ body {
     border-radius: 50%;
     animation: circleRotate 5s linear infinite;
 }
+
 
 .glowing-circle span:nth-child(1) {
     filter: blur(10px);
