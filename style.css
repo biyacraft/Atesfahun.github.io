@@ -6,10 +6,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    border: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    outline: none;
 }
 
-
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
 body {
     background-color: #0c1022;
@@ -72,7 +78,6 @@ body {
     display: none;
 }
 
-
 .home {
     width: 100%;
     height: 100vh;
@@ -95,7 +100,6 @@ body {
     animation-delay: .7s;
 }
 
-
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
@@ -115,7 +119,6 @@ body {
 
 }
 
-
 .btn {
     position: relative;
     display: inline-flex;
@@ -128,13 +131,11 @@ body {
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-
     z-index: 1;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 1.8s;
 }
-
 
 .btn::before {
     content: '';
@@ -176,6 +177,8 @@ body {
     background-position: 100% 0;
 }
 
+
+
 .home-sci a {
     position: relative;
     display: flex;
@@ -210,7 +213,6 @@ body {
     animation-delay: 2.1s;
 }
 
-
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -225,7 +227,6 @@ body {
 .home-sci a:hover::before {
     filter: blur(5px);
 }
-
 
 .home-sci a::after {
     content: '';
@@ -250,7 +251,6 @@ body {
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2.1s, 3.1s;
 }
-
 
 .home-img .glowing-circle {
     position: relative;
@@ -281,7 +281,6 @@ body {
     border-radius: 50%;
     animation: circleRotate 5s linear infinite;
 }
-
 
 .glowing-circle span:nth-child(1) {
     filter: blur(10px);
@@ -338,21 +337,18 @@ body {
 .about-content h3,
 h4,
 p {
-    text-align: center;
+    text-align: left;
     width: 100%;
 
 }
+
 
 .about-content {
     width: 100%;
-    background-image: "images\about.png";
+
 }
 
-.about-content h4 {
-    font-size: 2rem;
-    width: 100%;
-    height: 100%;
-}
+
 
 .about img {
     height: 100%;
@@ -361,11 +357,12 @@ p {
     align-items: center;
     justify-content: center;
     object-fit: fill;
+    padding-left: 20px;
 
 }
 
 .about-content h2 {
-    text-align: center;
+    text-align: left;
     line-height: 1.2;
     font-size: 5rem;
     justify-content: right;
@@ -377,20 +374,27 @@ span {
     color: #f06;
 }
 
+
 .about-content h3 {
-    text-align: center;
-    font-size: 2.6rem;
+    text-align: left;
+    font-size: 3rem;
     justify-content: right;
 }
 
-.about-content p {
-    text-align: center;
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-    justify-content: right;
+.about-content h4 {
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
 
 }
 
+
+
+.skills h4,
+h5 {
+    font-size: 3rem;
+    text-align: center;
+}
 
 .skills {
     text-align: center;
@@ -403,6 +407,7 @@ span {
 .skills h2 {
     margin-bottom: 5rem;
     color: #f06;
+    text-align: center;
 }
 
 .skills ul {
@@ -437,22 +442,25 @@ span {
 }
 
 .portfolio h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
 }
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    ;
 }
 
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem linear-gradient(#f06);
+    box-shadow: 0 0 1rem var(--bg--color);
     overflow: hidden;
     display: flex;
-    margin: 1rem;
+
 }
 
 .portfolio-box .portfolio-layer {
@@ -461,7 +469,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 1), var(--main--color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main--color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,6 +487,11 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
 }
 
 .portfolio-layer a {
@@ -509,14 +522,57 @@ span {
 
 }
 
+.services h2 {
+    margin-bottom: 5rem;
+
+}
+
+.service-c0ntainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.service-c0ntainer .service-b0x {
+    flex: 1 1 30rem;
+    background: var(--second-bg--color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #f06;
+
+}
+
+.service-b0x i {
+    font-size: 7rem;
+    color: var(--bg--color);
+}
+
+.service-b0x h3 {
+    font-size: 2.6rem;
+
+}
+
+.service-b0x p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
 
 .contact {
     margin-bottom: 3rem;
 }
 
 .contact form {
-    max-width: 50rem;
-    max-width: 50rem;
+    max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -535,7 +591,7 @@ span {
     font-size: 1.6rem;
     color: var(--text--color);
     background: var(--bg--color);
-    border-radius: 6rem;
+    border-radius: .8rem;
     margin: .7rem 0;
 }
 
@@ -545,8 +601,14 @@ span {
 
 .contact form textarea {
     resize: none;
-    height: 50%;
 }
+
+.contact form btn {
+    margin-top: 2rem;
+    cursor: pointer;
+
+}
+
 
 .contact form input {
     position: relative;
@@ -636,18 +698,18 @@ span {
     height: 35px;
     line-height: 35px;
     padding: .8rem;
-    background: var(--main--color);
+    background: #fff;
     border-radius: .8rem;
     transition: .5s ease;
 }
 
 .footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main--color);
+    box-shadow: 0 0 1rem #f06;
 }
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--bg--color);
+    color: #f06;
 
 }
 
@@ -827,13 +889,20 @@ span {
     .home-img img {
 
         width: 73vw;
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
 
 
     .home-img {
-        display: inline-block;
-        margin-top: 6rem;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .home-img .image {}
+
+    .home-img .glowing-circle {
+        width: 50%;
+        height: 50%;
     }
 
     .home-sci {
@@ -862,6 +931,7 @@ span {
 
     .about-content img {
         max-width: 100px;
+        margin-left: 4rem;
     }
 
     .skills ul {
@@ -912,6 +982,7 @@ span {
 
     .footer {
         flex-direction: column-reverse;
+        display: flexbox;
     }
 
     .footer p {
