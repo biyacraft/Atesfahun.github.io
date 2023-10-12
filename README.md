@@ -1,6 +1,6 @@
 # Atesfahun.github.io
 
-This repository contains the source code and content for my personal website, hosted at [Atesfahun.github.io](https://Atesfahun.github.io). The website showcases my projects, blog posts, and provides information about me.
+This repository contains the source code and content for my personal portfolio website, hosted at [Atesfahun.github.io](https://Atesfahun.github.io). The website showcases my projects, blog posts, and provides information about me.
 
 ## Table of Contents
 
