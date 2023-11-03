@@ -2,15 +2,6 @@
 
 This repository contains the source code and content for my personal portfolio website, hosted at [Atesfahun.github.io](https://Atesfahun.github.io). The website showcases my projects, blog posts, and provides information about me.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - Showcase my projects and portfolio.
